@@ -25,20 +25,40 @@ repositories {
 print(dependencyManagement)
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+    // Spring Data JPA
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-data-rest'
-//    implementation 'org.springframework.boot:spring-boot-starter-security'
-//    testImplementation 'org.springframework.security:spring-security-test'
+
+    // Spring Security
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
+    testImplementation 'org.springframework.security:spring-security-test'
+
+    // Thymeleaf
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+    // Spring Validation
     implementation 'org.springframework.boot:spring-boot-starter-validation'
+
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.data:spring-data-rest-hal-explorer'
-    implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
-    compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+    // H2
     runtimeOnly 'com.h2database:h2'
+
+    // MySQL
     runtimeOnly 'com.mysql:mysql-connector-j'
+
+    // Lombok
     annotationProcessor 'org.projectlombok:lombok'
+    compileOnly 'org.projectlombok:lombok'
+
+    // Configuration Processor
+    implementation 'org.springframework.boot:spring-boot-configuration-processor'
+
+    // Test
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
