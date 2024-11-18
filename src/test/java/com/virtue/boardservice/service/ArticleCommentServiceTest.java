@@ -2,6 +2,7 @@ package com.virtue.boardservice.service;
 
 import com.virtue.boardservice.domain.Article;
 import com.virtue.boardservice.domain.ArticleComment;
+import com.virtue.boardservice.domain.UserAccount;
 import com.virtue.boardservice.dto.ArticleCommentDto;
 import com.virtue.boardservice.dto.UserAccountDto;
 import com.virtue.boardservice.repository.ArticleCommentRepository;

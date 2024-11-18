@@ -1,6 +1,7 @@
 package com.virtue.boardservice.service;
 
 import com.virtue.boardservice.domain.Article;
+import com.virtue.boardservice.domain.UserAccount;
 import com.virtue.boardservice.domain.type.SearchType;
 import com.virtue.boardservice.dto.ArticleDto;
 import com.virtue.boardservice.dto.ArticleWithCommentsDto;

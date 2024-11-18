@@ -1,5 +1,7 @@
 package com.virtue.boardservice.dto;
 
+import com.virtue.boardservice.domain.UserAccount;
+
 import java.time.LocalDateTime;
 
 public record UserAccountDto(

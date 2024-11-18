@@ -1,7 +1,6 @@
 package com.virtue.boardservice.repository;
 
 import com.querydsl.core.types.dsl.DateTimeExpression;
-import com.querydsl.core.types.dsl.SimpleExpression;
 import com.querydsl.core.types.dsl.StringExpression;
 import com.virtue.boardservice.domain.Article;
 import com.virtue.boardservice.domain.QArticle;
