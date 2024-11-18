@@ -1,42 +1,39 @@
 package com.virtue.boardservice.service;
 
 import com.virtue.boardservice.domain.type.SearchType;
-import com.virtue.boardservice.dto.ArticleDTO;
-import com.virtue.boardservice.dto.ArticleUpdateDTO;
+import com.virtue.boardservice.dto.ArticleDto;
+import com.virtue.boardservice.dto.ArticleWithCommentsDto;
 import com.virtue.boardservice.repository.ArticleRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.time.LocalDateTime;
-import java.util.List;
-
 @RequiredArgsConstructor
-@Service
 @Transactional
+@Service
 public class ArticleService {
 
     private final ArticleRepository articleRepository;
 
     @Transactional(readOnly = true)
-    public Page<ArticleDTO> searchArticles(SearchType searchType, String searchKeyword) {
+    public Page<ArticleDto> searchArticles(SearchType searchType, String searchKeyword, Pageable pageable) {
         return Page.empty();
     }
 
     @Transactional(readOnly = true)
-    public ArticleDTO searchArticle(long l) {
+    public ArticleWithCommentsDto getArticle(Long articleId) {
         return null;
     }
 
-
-    public void saveArticle(ArticleDTO articleDTO) {
-
+    public void saveArticle(ArticleDto dto) {
     }
 
-    public void updateArticle(long articleId, ArticleUpdateDTO articleUpdateDTO) {
+    public void updateArticle(ArticleDto dto) {
     }
 
     public void deleteArticle(long articleId) {
     }
+
 }
