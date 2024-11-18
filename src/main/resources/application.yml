@@ -19,10 +19,10 @@ spring:
 #    username: sa
 #    driver-class-name: org.h2.Driver
   jpa:
+    open-in-view: false
     defer-datasource-initialization: true
     hibernate:
       ddl-auto: create
-    open-in-view: false
     show-sql: true
     properties:
       hibernate:
